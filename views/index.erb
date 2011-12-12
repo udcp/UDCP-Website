@@ -1,0 +1,10 @@
+
+<% @rss.channel.items.each do |item| %>
+  <article>
+    <h3><%= item.title %></h3>
+    <div><%= item.link %></div>
+    <div><%= item.description %></div>
+    <div><%= item.author %></div>
+    <div><%= item.pubDate %></div>
+  </article>
+<% end %>
